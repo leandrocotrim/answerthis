@@ -19,6 +19,7 @@ from api import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('logged/<value>', views.logged, name='logged'),
     path('registration/', include('registration.urls')),
 
     #path('admin/', admin.site.urls),
