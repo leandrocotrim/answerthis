@@ -10,3 +10,6 @@ def get_db():
 
     mc = MongoClient(host, port)
     return mc[db]
+
+def get_collection(collection_name):
+    return get_db()[collection_name]
